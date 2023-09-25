@@ -1,0 +1,161 @@
+/* File: style.css
+    GUI Assignment: Creating Your First Web Page
+    Brandon Nguyen, Umass Lowell Computer Science, Brandon_Nguyen4@student.uml.edu
+    Copyright (c) 2023 by Brandon. All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author.
+     */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+/* changed up my h3 so that it uses the Poppins font and aligns the text in the center  */
+h3{
+    font-family: "Poppins", serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Changed to Poppins font and text aligned to the center to look neater */
+body{
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+/* Allows me to adjust the wrapper to format the webpage*/
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Made my header look nice with the nav bar and made it have a fixed position */
+header{
+    width: 100%;
+    height: 100px;
+    background: #ADD8E6;
+    position: fixed;
+}
+
+/* Made a Logo called One Piece Wiki as the main title for the webpage and made it float on the left */
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+
+/* Changed the Logo Title to be used in Poppins and have a 4 pixel letter spacing so its not too squished*/
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Poppins',serif;
+    color: white;
+    letter-spacing: 4px;
+}
+
+/* Made the nav bar float to the right in general */
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+/* made the info such as Summary and Crew in the nav bar be more neat with font-weight and padding*/
+nav a{
+    text-decoration: none;
+    font-family: "Poppins",serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: white;
+    padding: 36px 10px;
+    margin: 0 2px;
+    font-weight: 700;
+}
+
+/* When you hover over the nav bar Summary and Crew, it will show the color white and have navy font color*/
+nav a:hover{
+    background: white;
+    color: navy;
+}
+
+/* Made the banner stretch to a picture of the One Piece from google too make it nicer and centered it*/
+.banner-area{
+    background-image: url(images/onepiece.jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    height: 45vh;
+    width: 100%;
+    position: fixed;
+}
+
+/* Made the banner area have some less opacity and be more gray because the picture used in the banner was too bright */
+.banner-area:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: gray;
+    opacity: .6;
+    z-index: -1;
+}
+
+/* Made the h2 in the banner area be somewhat big with 130 pixel font with some padding at the top */
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 130px;
+    color: white;
+}
+
+/* Main content area added a background and so that it perfectly touches the top of the banner section*/
+.content-area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #D3B683;
+    background-image: url(images/map.jpg);
+    top: 515px;
+}
+
+/* made the h2 content area be 70 pixels big to show that it is the main section title such as Summary and Crew*/
+.content-area h2{
+    font-size: 70px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+}
+
+/* made the content area paragraph be bold and alignment to be justified and padded it just a bit so that its not too far from the title*/
+.content-area p{
+    padding: 2% 0;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Made each table have a black border and to be collapsed so there is no white spacing in them. Also made the background color to be white so its more easily readable 
+because the background image is a map and it was hard to reach the information within the page without it.*/
+table, th, td{
+    border: 5px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: left;
+    background-color: white;
+}
+
+/* Makes it so that the table is centered with this class */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Made each image have a black border so that it could show better */
+img{
+    border: 10px solid black;
+}
